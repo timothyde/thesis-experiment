@@ -23,7 +23,7 @@ const Actions = styled.div`
 `;
 
 const info = () => {
-  message.info('Bitte bleibe auf dieser Seite.');
+  message.info('Bitte verlassen Sie das Experiment nicht.');
 };
 
 export default ({ data }) => (
