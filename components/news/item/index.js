@@ -1,4 +1,4 @@
-import { Button, Card, Divider } from 'antd';
+import { Button, Card, Divider, message } from 'antd';
 import styled from 'styled-components';
 
 const { Meta } = Card;
@@ -22,6 +22,10 @@ const Actions = styled.div`
   justify-content: space-between;
 `;
 
+const info = () => {
+  message.info('Bitte bleibe auf dieser Seite.');
+};
+
 export default ({ data }) => (
   <NewsCard
     style={{ maxWidth: 800 }}
@@ -30,7 +34,7 @@ export default ({ data }) => (
     <Meta title={data.title} description={data.description} />
     <Divider />
     <Actions>
-      <Button>Zum Artikel</Button>
+      <Button onClick={info}>Zum Artikel</Button>
       <h6>Veröffentlicht auf {data.source.name}</h6>
     </Actions>
   </NewsCard>

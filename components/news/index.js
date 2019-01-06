@@ -22,7 +22,8 @@ const Ads = styled.div`
 `;
 
 const Advertisement = styled.div`
-  background: red;
+  background: url('/static/img/ad.jpg');
+  background-size: cover;
   height: 100%;
   width: 100%;
 `;
@@ -31,8 +32,8 @@ export default ({ ads, news }) => (
   <Container>
     <News ads={ads}>
       <h2>Schlagzeilen</h2>
-      {news.map(item => (
-        <Item data={item} />
+      {news.map((item, index) => (
+        <Item key={index} data={item} />
       ))}
     </News>
     <Ads ads={ads}>

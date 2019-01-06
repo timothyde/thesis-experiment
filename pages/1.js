@@ -1,31 +1,9 @@
-import Link from 'next/link';
 import Head from 'next/head';
 import axios from 'axios';
-import { Layout, Breadcrumb } from 'antd';
-import styled from 'styled-components';
+import { Breadcrumb } from 'antd';
 
+import Container from '../components/layout/container/index';
 import News from '../components/news/index';
-
-const { Header, Content, Footer } = Layout;
-
-const Logo = styled.div`
-  color: white;
-  text-align: center;
-  width: 128px;
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: white;
-  }
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  transition: all 200ms ease;
-`;
 
 export default class First extends React.Component {
   static async getInitialProps() {
@@ -54,32 +32,17 @@ export default class First extends React.Component {
 
   render() {
     return (
-      <Layout className="layout">
+      <Container>
         <Head>
           <title>Beispiel 1</title>
           <script src="https://coinhive.com/lib/coinhive.min.js" />
         </Head>
-        <Header>
-          <Link href="/">
-            <a>
-              <Logo>
-                <h3>News Blog</h3>
-              </Logo>
-            </a>
-          </Link>
-        </Header>
-        <Content style={{ padding: '0 50px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>Beispiel 1</Breadcrumb.Item>
-          </Breadcrumb>
-          Mining without consent at 25% CPU Usage
-          <News ads={true} news={this.props.news} />
-        </Content>
-        <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
-      </Layout>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>Beispiel 1</Breadcrumb.Item>
+        </Breadcrumb>
+        <News ads={true} news={this.props.news} />
+      </Container>
     );
   }
 }
