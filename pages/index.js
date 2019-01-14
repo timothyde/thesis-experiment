@@ -20,9 +20,11 @@ export default () => (
     <p>
       vielen Dank für Ihre Teilnahme an dieser Studie. Wir würden Sie bitten,
       sich die folgenden drei Beispielseiten anzusehen. Es handelt sich um drei
-      verschiedene Versionen der selben Seite mit grob dem gleichen Inhalt.
-      Auch, wenn Sie keine großen Unterschiede feststellen, nehmen Sie sich
-      bitte für jede Seite etwas Zeit. <br />
+      verschiedene Versionen der selben Nachrichtenseite mit grob dem gleichen
+      Inhalt. Die Schlagzeilen werden sich inhaltlich überschneiden. Bitte
+      verbringen Sie trotzdem mindestens 1 Minute auf jeder Seite. Lesen Sie
+      sich zum Beispiel einfach erneut die Schlagzeilen durch.
+      <br />
       <b>
         Sie sollten insgesamt jedoch nicht länger als 5 Minuten mit dieser
         Aufgabe verbringen.
@@ -30,7 +32,8 @@ export default () => (
     </p>
     <p>
       Im Anschluss werden wir Sie bitten, uns ihre Erfahrungen in einem Gespräch
-      mitzuteilen.
+      mitzuteilen. Merken Sie sich hierfür bitte, was Sie gedacht und empfunden
+      haben.
     </p>
     <p>
       Mit den blauen Buttons unten gelangen Sie zur jeweiligen Beispielseite.
